@@ -55,7 +55,7 @@
 
 ## 🪄 What is Sahaayak?
 
-**Sahaayak** (सहायक — *"helper"* in Hindi) is a multilingual personal AI operating system designed for **1.4 billion Indian users**. It combines AI chat, voice, document scanning, translation, notes, tasks, emails, and news into one seamless workspace — all in **13 Indian languages**.
+**Sahaayak** (सहायक — *"helper"* in Hindi) is a multilingual personal AI operating system initially designed for **1.4 billion Indian users**, now ready to scale globally. It combines AI chat, voice, document scanning, translation, notes, tasks, emails, and news into one seamless workspace — transcending language barriers everywhere.
 
 <div align="center">
 
@@ -64,6 +64,12 @@
 </div>
 
 Powered by GPT and Claude.
+
+<br/>
+
+## 🌍 About & Global Vision
+
+While **Sahaayak** was born in India to solve extreme multilingual and accessibility challenges, its robust architecture is **globally adaptable**. Any nation, organization, or enterprise can leverage Sahaayak's core features—unified multi-modal AI interface, rapid low-resource localization, and secure foundation—to deploy an inclusive AI OS tailored for their citizens or employees anywhere in the world.
 
 <br/>
 
@@ -561,6 +567,10 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
 
 <sub>If Sahaayak helped you, give it a ⭐ — it means the world to us!</sub>
+
+<br/><br/>
+
+**#SahaayakAI #ArtificialIntelligence #TechForGood #GovTech #OpenSource #InclusiveTech #MultilingualAI #AIAssistant #GlobalInnovation**
 
 <br/><br/>
 
