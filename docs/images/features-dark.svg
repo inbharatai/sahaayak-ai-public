@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <defs>
+    <linearGradient id="card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#161b22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="420" rx="16" fill="#0d1117"/>
+
+  <!-- Row 1 -->
+  <!-- Card 1: AI Chat -->
+  <rect x="20" y="20" width="200" height="170" rx="12" fill="url(#card)" stroke="#FF993340" stroke-width="1"/>
+  <circle cx="70" cy="60" r="22" fill="#FF993320"/>
+  <text x="70" y="67" text-anchor="middle" font-size="24">🤖</text>
+  <text x="110" y="65" font-family="Segoe UI, Arial" font-size="15" font-weight="700" fill="#FF9933">AI Chat</text>
+  <text x="35" y="95" font-family="Segoe UI, Arial" font-size="11.5" fill="#8b949e">
+    <tspan x="35" dy="0">Personal vector memory</tspan>
+    <tspan x="35" dy="16">Government scheme search</tspan>
+    <tspan x="35" dy="16">Context-aware replies</tspan>
+    <tspan x="35" dy="16">Multilingual conversation</tspan>
+  </text>
+
+  <!-- Card 2: Voice -->
+  <rect x="235" y="20" width="200" height="170" rx="12" fill="url(#card)" stroke="#3B82F640" stroke-width="1"/>
+  <circle cx="285" cy="60" r="22" fill="#3B82F620"/>
+  <text x="285" y="67" text-anchor="middle" font-size="24">🎙️</text>
+  <text x="325" y="65" font-family="Segoe UI, Arial" font-size="15" font-weight="700" fill="#3B82F6">Voice Pipeline</text>
+  <text x="250" y="95" font-family="Segoe UI, Arial" font-size="11.5" fill="#8b949e">
+    <tspan x="250" dy="0">Whisper &amp; Vosk STT</tspan>
+    <tspan x="250" dy="16">Piper &amp; gTTS synthesis</tspan>
+    <tspan x="250" dy="16">Voice commands</tspan>
+    <tspan x="250" dy="16">Audio file management</tspan>
+  </text>
+
+  <!-- Card 3: OCR Scanner -->
+  <rect x="450" y="20" width="200" height="170" rx="12" fill="url(#card)" stroke="#10B98140" stroke-width="1"/>
+  <circle cx="500" cy="60" r="22" fill="#10B98120"/>
+  <text x="500" y="67" text-anchor="middle" font-size="24">📷</text>
+  <text x="540" y="65" font-family="Segoe UI, Arial" font-size="15" font-weight="700" fill="#10B981">OCR Scanner</text>
+  <text x="465" y="95" font-family="Segoe UI, Arial" font-size="11.5" fill="#8b949e">
+    <tspan x="465" dy="0">10 Indic script detection</tspan>
+    <tspan x="465" dy="16">5 preprocessing variants</tspan>
+    <tspan x="465" dy="16">PDF &amp; image support</tspan>
+    <tspan x="465" dy="16">AI-powered summaries</tspan>
+  </text>
+
+  <!-- Card 4: Translation -->
+  <rect x="665" y="20" width="215" height="170" rx="12" fill="url(#card)" stroke="#8B5CF640" stroke-width="1"/>
+  <circle cx="715" cy="60" r="22" fill="#8B5CF620"/>
+  <text x="715" y="67" text-anchor="middle" font-size="24">🌐</text>
+  <text x="755" y="65" font-family="Segoe UI, Arial" font-size="15" font-weight="700" fill="#8B5CF6">Translation</text>
+  <text x="680" y="95" font-family="Segoe UI, Arial" font-size="11.5" fill="#8b949e">
+    <tspan x="680" dy="0">13 Indian languages</tspan>
+    <tspan x="680" dy="16">Literal · Natural · Formal</tspan>
+    <tspan x="680" dy="16">Runtime UI translation</tspan>
+    <tspan x="680" dy="16">Batch API for frontend</tspan>
+  </text>
+
+  <!-- Row 2 -->
+  <!-- Card 5: Notes -->
+  <rect x="20" y="210" width="200" height="170" rx="12" fill="url(#card)" stroke="#F59E0B40" stroke-width="1"/>
+  <circle cx="70" cy="250" r="22" fill="#F59E0B20"/>
+  <text x="70" y="257" text-anchor="middle" font-size="24">📝</text>
+  <text x="110" y="255" font-family="Segoe UI, Arial" font-size="15" font-weight="700" fill="#F59E0B">Smart Notes</text>
+  <text x="35" y="285" font-family="Segoe UI, Arial" font-size="11.5" fill="#8b949e">
+    <tspan x="35" dy="0">Create, edit, search</tspan>
+    <tspan x="35" dy="16">AI summarization</tspan>
+    <tspan x="35" dy="16">Full-text search</tspan>
+    <tspan x="35" dy="16">Multilingual support</tspan>
+  </text>
+
+  <!-- Card 6: Tasks & Reminders -->
+  <rect x="235" y="210" width="200" height="170" rx="12" fill="url(#card)" stroke="#EF444440" stroke-width="1"/>
+  <circle cx="285" cy="250" r="22" fill="#EF444420"/>
+  <text x="285" y="257" text-anchor="middle" font-size="24">✅</text>
+  <text x="325" y="255" font-family="Segoe UI, Arial" font-size="15" font-weight="700" fill="#EF4444">Tasks &amp; Reminders</text>
+  <text x="250" y="285" font-family="Segoe UI, Arial" font-size="11.5" fill="#8b949e">
+    <tspan x="250" dy="0">Priority-based management</tspan>
+    <tspan x="250" dy="16">Due dates &amp; tracking</tspan>
+    <tspan x="250" dy="16">Push notifications</tspan>
+    <tspan x="250" dy="16">.ics calendar export</tspan>
+  </text>
+
+  <!-- Card 7: Email Intelligence -->
+  <rect x="450" y="210" width="200" height="170" rx="12" fill="url(#card)" stroke="#06B6D440" stroke-width="1"/>
+  <circle cx="500" cy="250" r="22" fill="#06B6D420"/>
+  <text x="500" y="257" text-anchor="middle" font-size="24">📧</text>
+  <text x="540" y="255" font-family="Segoe UI, Arial" font-size="15" font-weight="700" fill="#06B6D4">Email Intelligence</text>
+  <text x="465" y="285" font-family="Segoe UI, Arial" font-size="11.5" fill="#8b949e">
+    <tspan x="465" dy="0">Gmail IMAP integration</tspan>
+    <tspan x="465" dy="16">AI inbox summary</tspan>
+    <tspan x="465" dy="16">Smart email triage</tspan>
+    <tspan x="465" dy="16">SMTP forwarding</tspan>
+  </text>
+
+  <!-- Card 8: News Feed -->
+  <rect x="665" y="210" width="215" height="170" rx="12" fill="url(#card)" stroke="#EC489940" stroke-width="1"/>
+  <circle cx="715" cy="250" r="22" fill="#EC489920"/>
+  <text x="715" y="257" text-anchor="middle" font-size="24">📰</text>
+  <text x="755" y="255" font-family="Segoe UI, Arial" font-size="15" font-weight="700" fill="#EC4899">Live News Feed</text>
+  <text x="680" y="285" font-family="Segoe UI, Arial" font-size="11.5" fill="#8b949e">
+    <tspan x="680" dy="0">9 news categories</tspan>
+    <tspan x="680" dy="16">36 states &amp; UTs coverage</tspan>
+    <tspan x="680" dy="16">Source deduplication</tspan>
+    <tspan x="680" dy="16">Multilingual translation</tspan>
+  </text>
+
+  <!-- Bottom accent -->
+  <rect y="400" width="900" height="4" rx="2" fill="#FF9933" opacity="0.3"/>
+  <rect y="400" width="300" height="4" rx="2" fill="#FF9933" opacity="0.6"/>
+</svg>

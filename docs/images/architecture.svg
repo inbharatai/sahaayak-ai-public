@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <defs>
+    <linearGradient id="frontendGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="backendGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="externalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#533483"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="tricolor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF9933"/>
+      <stop offset="50%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#138808"/>
+    </linearGradient>
+    <filter id="boxShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000050"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" rx="16" fill="#0d1117"/>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-family="Segoe UI, Arial" font-size="18" font-weight="700" fill="#c9d1d9">System Architecture</text>
+  <rect x="350" y="42" width="200" height="2" fill="url(#tricolor)" rx="1"/>
+
+  <!-- FRONTEND BOX -->
+  <rect x="50" y="60" width="800" height="120" rx="12" fill="url(#frontendGrad)" stroke="#61DAFB40" stroke-width="1.5" filter="url(#boxShadow)"/>
+  <text x="80" y="85" font-family="Segoe UI, Arial" font-size="13" font-weight="700" fill="#61DAFB">🖥️ FRONTEND — Next.js 16 + React 19 + TypeScript</text>
+
+  <!-- Frontend modules -->
+  <g font-family="Segoe UI, Arial" font-size="11" font-weight="600">
+    <rect x="70" y="100" width="80" height="30" rx="6" fill="#61DAFB15" stroke="#61DAFB50" stroke-width="1"/>
+    <text x="110" y="120" text-anchor="middle" fill="#61DAFB">💬 Chat</text>
+
+    <rect x="165" y="100" width="80" height="30" rx="6" fill="#61DAFB15" stroke="#61DAFB50" stroke-width="1"/>
+    <text x="205" y="120" text-anchor="middle" fill="#61DAFB">📝 Notes</text>
+
+    <rect x="260" y="100" width="80" height="30" rx="6" fill="#61DAFB15" stroke="#61DAFB50" stroke-width="1"/>
+    <text x="300" y="120" text-anchor="middle" fill="#61DAFB">📷 Scanner</text>
+
+    <rect x="355" y="100" width="80" height="30" rx="6" fill="#61DAFB15" stroke="#61DAFB50" stroke-width="1"/>
+    <text x="395" y="120" text-anchor="middle" fill="#61DAFB">📰 Feed</text>
+
+    <rect x="450" y="100" width="80" height="30" rx="6" fill="#61DAFB15" stroke="#61DAFB50" stroke-width="1"/>
+    <text x="490" y="120" text-anchor="middle" fill="#61DAFB">✅ Tasks</text>
+
+    <rect x="545" y="100" width="80" height="30" rx="6" fill="#61DAFB15" stroke="#61DAFB50" stroke-width="1"/>
+    <text x="585" y="120" text-anchor="middle" fill="#61DAFB">📧 Email</text>
+
+    <rect x="640" y="100" width="90" height="30" rx="6" fill="#61DAFB15" stroke="#61DAFB50" stroke-width="1"/>
+    <text x="685" y="120" text-anchor="middle" fill="#61DAFB">⚙️ Settings</text>
+
+    <rect x="745" y="100" width="85" height="30" rx="6" fill="#61DAFB15" stroke="#61DAFB50" stroke-width="1"/>
+    <text x="787" y="120" text-anchor="middle" fill="#61DAFB">🌐 i18n</text>
+  </g>
+
+  <!-- Port label -->
+  <text x="830" y="85" text-anchor="end" font-family="Segoe UI, Arial" font-size="10" fill="#8b949e">:3000</text>
+
+  <!-- Connection arrow -->
+  <line x1="450" y1="180" x2="450" y2="210" stroke="#58a6ff" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="470" y="200" font-family="Segoe UI, Arial" font-size="10" fill="#58a6ff">REST API</text>
+  <polygon points="445,210 455,210 450,218" fill="#58a6ff"/>
+
+  <!-- BACKEND BOX -->
+  <rect x="50" y="220" width="800" height="170" rx="12" fill="url(#backendGrad)" stroke="#009688" stroke-width="1.5" filter="url(#boxShadow)"/>
+  <text x="80" y="245" font-family="Segoe UI, Arial" font-size="13" font-weight="700" fill="#009688">⚡ BACKEND — FastAPI + Python 3.12</text>
+  <text x="830" y="245" text-anchor="end" font-family="Segoe UI, Arial" font-size="10" fill="#8b949e">:8000</text>
+
+  <!-- Backend components -->
+  <g font-family="Segoe UI, Arial" font-size="10.5">
+    <!-- Routers -->
+    <rect x="70" y="260" width="160" height="55" rx="8" fill="#00968815" stroke="#00968850" stroke-width="1"/>
+    <text x="150" y="278" text-anchor="middle" font-size="11" font-weight="700" fill="#009688">📡 12 API Routers</text>
+    <text x="150" y="295" text-anchor="middle" fill="#8b949e">chat · voice · ocr · notes</text>
+    <text x="150" y="307" text-anchor="middle" fill="#8b949e">tasks · feed · email · push</text>
+
+    <!-- Services -->
+    <rect x="250" y="260" width="160" height="55" rx="8" fill="#00968815" stroke="#00968850" stroke-width="1"/>
+    <text x="330" y="278" text-anchor="middle" font-size="11" font-weight="700" fill="#009688">⚙️ 15 Services</text>
+    <text x="330" y="295" text-anchor="middle" fill="#8b949e">ai_engine · ocr · stt · tts</text>
+    <text x="330" y="307" text-anchor="middle" fill="#8b949e">memory · translate · feed</text>
+
+    <!-- Security -->
+    <rect x="430" y="260" width="160" height="55" rx="8" fill="#EF444415" stroke="#EF444450" stroke-width="1"/>
+    <text x="510" y="278" text-anchor="middle" font-size="11" font-weight="700" fill="#EF4444">🛡️ Security Layer</text>
+    <text x="510" y="295" text-anchor="middle" fill="#8b949e">JWT · Rate limit · CORS</text>
+    <text x="510" y="307" text-anchor="middle" fill="#8b949e">Injection guard (16+ rules)</text>
+
+    <!-- AI Engine -->
+    <rect x="610" y="260" width="220" height="55" rx="8" fill="#7C3AED15" stroke="#7C3AED50" stroke-width="1"/>
+    <text x="720" y="278" text-anchor="middle" font-size="11" font-weight="700" fill="#7C3AED">🧠 AI Engine (GPT-4o-mini)</text>
+    <text x="720" y="295" text-anchor="middle" fill="#8b949e">Embeddings · Memory search</text>
+    <text x="720" y="307" text-anchor="middle" fill="#8b949e">Gov schemes · Retry logic</text>
+
+    <!-- Storage row -->
+    <rect x="70" y="330" width="120" height="45" rx="8" fill="#003B5715" stroke="#003B5750" stroke-width="1"/>
+    <text x="130" y="350" text-anchor="middle" font-size="11" font-weight="700" fill="#58a6ff">💾 SQLite (WAL)</text>
+    <text x="130" y="364" text-anchor="middle" fill="#8b949e">7 tables · No ORM</text>
+
+    <rect x="210" y="330" width="130" height="45" rx="8" fill="#7C3AED15" stroke="#7C3AED50" stroke-width="1"/>
+    <text x="275" y="350" text-anchor="middle" font-size="11" font-weight="700" fill="#A78BFA">🧠 Vector Memory</text>
+    <text x="275" y="364" text-anchor="middle" fill="#8b949e">Cosine similarity</text>
+
+    <rect x="360" y="330" width="130" height="45" rx="8" fill="#10B98115" stroke="#10B98150" stroke-width="1"/>
+    <text x="425" y="350" text-anchor="middle" font-size="11" font-weight="700" fill="#10B981">📷 Tesseract + Rapid</text>
+    <text x="425" y="364" text-anchor="middle" fill="#8b949e">OCR · 10 scripts</text>
+
+    <rect x="510" y="330" width="150" height="45" rx="8" fill="#3B82F615" stroke="#3B82F650" stroke-width="1"/>
+    <text x="585" y="350" text-anchor="middle" font-size="11" font-weight="700" fill="#3B82F6">🎙️ Whisper/Vosk + Piper</text>
+    <text x="585" y="364" text-anchor="middle" fill="#8b949e">STT · TTS · Audio</text>
+
+    <rect x="680" y="330" width="150" height="45" rx="8" fill="#F59E0B15" stroke="#F59E0B50" stroke-width="1"/>
+    <text x="755" y="350" text-anchor="middle" font-size="11" font-weight="700" fill="#F59E0B">⏰ APScheduler</text>
+    <text x="755" y="364" text-anchor="middle" fill="#8b949e">Reminders · Tasks</text>
+  </g>
+
+  <!-- Connection arrow to external -->
+  <line x1="450" y1="390" x2="450" y2="420" stroke="#A78BFA" stroke-width="2" stroke-dasharray="6,3"/>
+  <polygon points="445,420 455,420 450,428" fill="#A78BFA"/>
+
+  <!-- EXTERNAL SERVICES -->
+  <rect x="50" y="430" width="800" height="70" rx="12" fill="url(#externalGrad)" stroke="#A78BFA40" stroke-width="1.5" filter="url(#boxShadow)"/>
+  <text x="80" y="455" font-family="Segoe UI, Arial" font-size="13" font-weight="700" fill="#A78BFA">☁️ EXTERNAL SERVICES</text>
+
+  <g font-family="Segoe UI, Arial" font-size="11" font-weight="600">
+    <rect x="70" y="465" width="130" height="26" rx="6" fill="#41299115" stroke="#41299150" stroke-width="1"/>
+    <text x="135" y="482" text-anchor="middle" fill="#c9d1d9">🤖 OpenAI GPT-4o</text>
+
+    <rect x="215" y="465" width="140" height="26" rx="6" fill="#FF993315" stroke="#FF993350" stroke-width="1"/>
+    <text x="285" y="482" text-anchor="middle" fill="#c9d1d9">🔍 Serper (Gov Search)</text>
+
+    <rect x="370" y="465" width="120" height="26" rx="6" fill="#3FCF8E15" stroke="#3FCF8E50" stroke-width="1"/>
+    <text x="430" y="482" text-anchor="middle" fill="#c9d1d9">🔐 Supabase Auth</text>
+
+    <rect x="505" y="465" width="100" height="26" rx="6" fill="#EA443515" stroke="#EA443550" stroke-width="1"/>
+    <text x="555" y="482" text-anchor="middle" fill="#c9d1d9">📧 Gmail IMAP</text>
+
+    <rect x="620" y="465" width="100" height="26" rx="6" fill="#3B82F615" stroke="#3B82F650" stroke-width="1"/>
+    <text x="670" y="482" text-anchor="middle" fill="#c9d1d9">🔔 Web Push</text>
+
+    <rect x="735" y="465" width="95" height="26" rx="6" fill="#10B98115" stroke="#10B98150" stroke-width="1"/>
+    <text x="782" y="482" text-anchor="middle" fill="#c9d1d9">📰 Serper News</text>
+  </g>
+
+  <!-- Bottom accent -->
+  <rect y="516" width="900" height="4" fill="url(#tricolor)" opacity="0.5"/>
+</svg>
